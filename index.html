@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gradient Background Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Gradient Background Generator 🎨</h1>
+    <div class="controls">
+      <input type="color" id="color1" value="#ff6a00" />
+      <input type="color" id="color2" value="#ee0979" />
+      <select id="direction">
+        <option value="to right">Left → Right</option>
+        <option value="to left">Right → Left</option>
+        <option value="to bottom">Top → Bottom</option>
+        <option value="to top">Bottom → Top</option>
+        <option value="135deg">Diagonal</option>
+      </select>
+      <button onclick="setGradient()">Generate</button>
+    </div>
+    <p class="css-output" id="cssOutput"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
